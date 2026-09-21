@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Footer GeoUcayali</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -11,188 +13,326 @@
       padding: 0;
     }
 
+    html,
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
+      width: 100%;
       background: transparent;
+      font-family: "Segoe UI", Arial, sans-serif;
     }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    /* =========================================================
+       FOOTER GENERAL
+    ========================================================= */
 
     .footer-geoucayali {
       width: 100%;
-      background:
-        linear-gradient(rgba(255,255,255,0.96), rgba(255,255,255,0.96)),
+
+      background-color: #ffffff;
+
+      background-image:
+        linear-gradient(
+          rgba(255,255,255,0.96),
+          rgba(255,255,255,0.96)
+        ),
         repeating-linear-gradient(
           45deg,
-          #f2f5f2 0,
-          #f2f5f2 1px,
+          #eef3ef 0px,
+          #eef3ef 1px,
           transparent 1px,
-          transparent 10px
+          transparent 12px
         );
 
-      border-top: 1px solid #dfe7df;
-      color: #33423a;
+      border-top: 1px solid #dfe8e2;
+
+      color: #48564e;
     }
 
-.footer-container {
-  max-width: 1500px;
-  margin: auto;
-  padding: 18px 32px 10px;
-}
+    .footer-container {
+      width: 100%;
+      max-width: 1500px;
+      margin: 0 auto;
+
+      padding: 18px 30px 10px;
+    }
+
+    /* =========================================================
+       CONTENIDO PRINCIPAL
+    ========================================================= */
 
     .footer-main {
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 35px;
+
+      grid-template-columns:
+        minmax(360px, 1.5fr)
+        minmax(240px, 0.9fr)
+        minmax(280px, 1fr);
+
+      gap: 50px;
+
       align-items: start;
     }
 
-    /* =========================
-       BLOQUE PRINCIPAL
-    ========================= */
+    /* =========================================================
+       GEOUCAYALI
+    ========================================================= */
 
     .footer-brand h2 {
-      color: #0a6339;
-      font-size: 22px;
-      margin-bottom: 7px;
+      color: #086736;
+
+      font-size: 23px;
       font-weight: 700;
+
+      margin-bottom: 7px;
+
+      line-height: 1.2;
     }
 
     .footer-brand p {
+      max-width: 570px;
+
+      color: #6d7871;
+
       font-size: 13.5px;
       line-height: 1.55;
-      color: #68736c;
-      max-width: 510px;
     }
 
     .footer-tag {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
-      margin-top: 12px;
-      font-size: 12px;
-      color: #587065;
-      background: #eef5ef;
-      border: 1px solid #dce9df;
-      padding: 6px 11px;
+
+      gap: 8px;
+
+      margin-top: 11px;
+
+      padding: 6px 12px;
+
+      border: 1px solid #d8e8dc;
       border-radius: 20px;
+
+      background: #f0f7f1;
+
+      color: #607069;
+
+      font-size: 12px;
     }
 
     .footer-dot {
-      width: 7px;
-      height: 7px;
-      background: #64a450;
+      width: 8px;
+      height: 8px;
+
+      flex: 0 0 auto;
+
       border-radius: 50%;
+
+      background: #61ad57;
     }
 
-    /* =========================
+    /* =========================================================
        COLUMNAS
-    ========================= */
+    ========================================================= */
 
     .footer-column h3 {
-      color: #244c36;
+      margin-bottom: 11px;
+
+      color: #254936;
+
       font-size: 14px;
-      margin-bottom: 10px;
       font-weight: 700;
     }
 
     .footer-column ul {
+      margin: 0;
+      padding: 0;
+
       list-style: none;
     }
 
     .footer-column li {
-      margin-bottom: 6px;
+      margin-bottom: 7px;
     }
 
     .footer-column a {
-      color: #68736c;
+      color: #69766f;
+
       font-size: 13px;
+
       text-decoration: none;
-      transition: 0.2s ease;
+
+      transition:
+        color 0.2s ease,
+        padding-left 0.2s ease;
     }
 
     .footer-column a:hover {
-      color: #0a6339;
       padding-left: 3px;
+
+      color: #08703d;
     }
 
+    /* =========================================================
+       CONTACTO
+    ========================================================= */
+
     .footer-contact {
+      color: #6b7670;
+
       font-size: 13px;
-      color: #68736c;
-      line-height: 1.6;
+      line-height: 1.55;
     }
 
     .footer-contact strong {
-      color: #3c5045;
+      color: #35493e;
+
       font-weight: 600;
     }
 
-    /* =========================
-       PARTE INFERIOR
-    ========================= */
+    .footer-contact a {
+      display: inline-block;
 
-.footer-bottom {
-  margin-top: 12px;
-  padding-top: 10px;
-}
+      margin-top: 8px;
 
+      color: #5f7468;
+
+      text-decoration: none;
+    }
+
+    .footer-contact a:hover {
+      color: #086736;
+    }
+
+    /* =========================================================
+       ZONA INFERIOR
+    ========================================================= */
+
+    .footer-bottom {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
 
-      gap: 20px;
+      gap: 25px;
+
+      margin-top: 13px;
+      padding-top: 10px;
+
+      border-top: 1px solid #e2e9e4;
     }
 
     .footer-copy {
+      flex: 1 1 auto;
+
+      color: #8a938d;
+
       font-size: 11.5px;
-      color: #879087;
+      white-space: nowrap;
     }
 
-    /* LOGOS PEQUEÑOS ABAJO */
+    /* =========================================================
+       LOGOS
+    ========================================================= */
 
-.footer-logos {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 24px;
-  flex-wrap: nowrap;
-}
+    .footer-logos {
+      display: flex;
 
-.footer-logos img {
-  display: block;
-  width: auto;
-  height: 32px;
-  max-width: 150px;
-  object-fit: contain;
-  opacity: 0.9;
-}
+      flex: 0 0 auto;
 
-.footer-logos img:hover {
-  opacity: 1;
-}
+      align-items: center;
+      justify-content: flex-end;
 
-    /* =========================
+      gap: 22px;
+    }
+
+    .footer-logo-item {
+      height: 34px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-logo-item img {
+      display: block;
+
+      width: auto;
+      height: auto;
+
+      max-height: 30px;
+      max-width: 130px;
+
+      object-fit: contain;
+
+      opacity: 0.9;
+
+      transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .footer-logo-item img:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
+    /* ajustes individuales de proporción */
+
+    .logo-dgt img {
+      max-width: 125px;
+      max-height: 29px;
+    }
+
+    .logo-geoucayali img {
+      max-width: 135px;
+      max-height: 29px;
+    }
+
+    .logo-goreu img {
+      max-width: 120px;
+      max-height: 30px;
+    }
+
+    .logo-ara img {
+      max-width: 120px;
+      max-height: 30px;
+    }
+
+    /* =========================================================
        RESPONSIVE
-    ========================= */
+    ========================================================= */
 
-    @media (max-width: 850px) {
+    @media (max-width: 1050px) {
 
       .footer-main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
+
+        gap: 30px;
       }
 
       .footer-brand {
         grid-column: 1 / -1;
       }
 
+      .footer-bottom {
+        align-items: flex-start;
+      }
+
+      .footer-logos {
+        flex-wrap: wrap;
+      }
+
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
 
       .footer-container {
-        padding: 20px;
+        padding: 18px 20px 12px;
       }
 
       .footer-main {
         grid-template-columns: 1fr;
+
         gap: 22px;
       }
 
@@ -202,30 +342,64 @@
 
       .footer-bottom {
         flex-direction: column;
-        align-items: flex-start;
+
+        gap: 13px;
+      }
+
+      .footer-copy {
+        white-space: normal;
       }
 
       .footer-logos {
+        width: 100%;
+
         justify-content: flex-start;
+
+        gap: 16px;
       }
 
-      .footer-logos img {
-        max-height: 24px;
+      .footer-logo-item img {
+        max-height: 25px;
+        max-width: 105px;
       }
 
     }
+
+    @media (max-width: 480px) {
+
+      .footer-logos {
+        display: grid;
+
+        grid-template-columns: repeat(2, auto);
+
+        justify-content: start;
+
+        column-gap: 20px;
+        row-gap: 12px;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
+
 <footer class="footer-geoucayali">
 
   <div class="footer-container">
 
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
     <div class="footer-main">
 
+
       <!-- GEOUCAYALI -->
+
       <div class="footer-brand">
 
         <h2>GeoUcayali</h2>
@@ -237,73 +411,173 @@
         </p>
 
         <div class="footer-tag">
+
           <span class="footer-dot"></span>
+
           Infraestructura de Datos Espaciales Regional
+
         </div>
 
       </div>
 
 
-      <!-- ACCESOS -->
+
+      <!-- ACCESOS RÁPIDOS -->
+
       <div class="footer-column">
 
         <h3>Accesos rápidos</h3>
 
         <ul>
-          <li><a href="#">Ordenamiento Territorial</a></li>
-          <li><a href="#">Demarcación Territorial</a></li>
-          <li><a href="#">Gestión de Datos Espaciales</a></li>
-          <li><a href="#">Memorias ZEE</a></li>
+
+          <li>
+            <a href="#">
+              Ordenamiento Territorial
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Demarcación Territorial
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Gestión de Datos Espaciales
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Memorias ZEE
+            </a>
+          </li>
+
         </ul>
 
       </div>
 
 
+
       <!-- CONTACTO -->
+
       <div class="footer-column">
 
         <h3>Contacto</h3>
 
         <div class="footer-contact">
 
-          <strong>Dirección de Gestión del Territorio</strong><br>
-          Gobierno Regional de Ucayali<br><br>
+          <strong>
+            Dirección de Gestión del Territorio
+          </strong>
 
-          geoucayali.regionucayali.gob.pe
+          <br>
+
+          Gobierno Regional de Ucayali
+
+          <br>
+
+          <a
+            href="https://geoucayali.regionucayali.gob.pe/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            geoucayali.regionucayali.gob.pe
+          </a>
 
         </div>
 
       </div>
 
+
     </div>
 
 
-    <!-- PARTE INFERIOR -->
+
+    <!-- =====================================================
+         PARTE INFERIOR
+    ====================================================== -->
+
     <div class="footer-bottom">
 
+
+      <!-- COPYRIGHT -->
+
       <div class="footer-copy">
+
         © 2026 Gobierno Regional de Ucayali · GeoUcayali
+
       </div>
 
 
-      <!-- LOGOS PEQUEÑOS -->
-<div class="footer-logos">
 
-  <img src="./dgt.png" alt="Dirección de Gestión del Territorio">
+      <!-- LOGOS -->
 
-  <img src="./geoucayali.png" alt="GeoUcayali">
+      <div class="footer-logos">
 
-  <img src="./goreu.png" alt="Gobierno Regional de Ucayali">
 
-  <img src="./ara.png" alt="Autoridad Regional Ambiental">
+        <!-- DGT -->
 
-</div>
+        <div class="footer-logo-item logo-dgt">
+
+          <img
+            src="./dgt.png"
+            alt="Dirección de Gestión del Territorio"
+          >
+
+        </div>
+
+
+
+        <!-- GEOUCAYALI -->
+
+        <div class="footer-logo-item logo-geoucayali">
+
+          <img
+            src="./geoucayali.png"
+            alt="GeoUcayali"
+          >
+
+        </div>
+
+
+
+        <!-- GOBIERNO REGIONAL -->
+
+        <div class="footer-logo-item logo-goreu">
+
+          <img
+            src="./goreu.png"
+            alt="Gobierno Regional de Ucayali"
+          >
+
+        </div>
+
+
+
+        <!-- ARA -->
+
+        <div class="footer-logo-item logo-ara">
+
+          <img
+            src="./ara.png"
+            alt="Autoridad Regional Ambiental"
+          >
+
+        </div>
+
+
+      </div>
+
 
     </div>
+
 
   </div>
 
 </footer>
+
 
 </body>
 </html>
